@@ -29,6 +29,16 @@ a{
     font-family: itim, sans-serif;
 }
 
+.stop-music {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
 .gameContainer{
     
