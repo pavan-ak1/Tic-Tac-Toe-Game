@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+nav ul{
+   
+    font-family: itim, sans-serif;
+   list-style: none;
+    
+}
+
+nav{
+    background-color: rgb(37, 36, 37);
+    color: aliceblue;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    
+
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    margin:  0;
+    padding: 0;
+    font-family: itim, sans-serif;
+}
+
+
+.gameContainer{
+    
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+   
+    margin-top: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 184px);
+    grid-template-rows: repeat(3, 184px);
+    padding-left: 20px;
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(193, 193, 193);
+    border-radius: 5px;
+}
+
+.info{
+    font-size: 25px;
+}
+
+.gameInfo{
+    padding: 0 34px;
+
+}
+
+
+
+.imagebox img{
+   width: 0;
+   transition: width 1s ease-in-out;
+
+}
+
+.reset {
+    margin: 0 23px;
+    padding: 6px 14px;
+    background: #e5c7e5;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+nav ul li a {
+    color: aliceblue; 
+    
+}
+
+
+nav ul li a:hover {
+    color: lightgray; 
+}
+
+@media screen and (max-width: 800px){
+    .gameContainer{
+        flex-wrap: wrap;
+        
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    nav{
+        width: 100%;
+    }
+    h1{
+        font-size: 43px;
+    }
+    .boxtext{
+        font-size: 40px;
+    }
+    .container{
+        
+        display: grid;
+        grid-template-columns: repeat(3, 73px);
+        grid-template-rows:repeat(3, 70px) ;
+    }
+
+}
